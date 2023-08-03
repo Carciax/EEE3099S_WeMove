@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "EEE3099S_CKT")(type "KiCad")(uri "${KIPRJMOD}/Libraries/EEE3099S_CKT.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,35 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 92d81b7a-2248-442f-a002-c72dc5123775)
+
+  (paper "A4")
+
+  (title_block
+    (title "Team 10: WeMove Robot circuitry")
+    (date "2023-08-03")
+    (rev "v0")
+    (company "University of Cape Town")
+    (comment 1 "Author: Cameron Clark")
+  )
+
+  (lib_symbols
+  )
+
+
+  (hierarchical_label "5V" (shape input) (at 208.28 152.4 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 2eee1f64-3e5d-4f09-b7ad-d1890621bdf1)
+  )
+  (hierarchical_label "ECHO" (shape output) (at 215.9 152.4 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 95fa4a36-6246-4c77-a654-d7e6b1d6beb4)
+  )
+  (hierarchical_label "GND" (shape input) (at 238.4595 152.2697 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid a2f71f5f-fa4d-4062-ae1e-f2516a524b0b)
+  )
+  (hierarchical_label "TRIG" (shape input) (at 227.33 152.4 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid c75d44c1-dac1-4abf-88e8-9423665119f2)
+  )
+)
