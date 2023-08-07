@@ -6,8 +6,8 @@
 
   (title_block
     (title "Team 10: WeMove Robot circuitry")
-    (date "2023-08-03")
-    (rev "v0")
+    (date "2023-08-07")
+    (rev "v0.1")
     (company "University of Cape Town")
     (comment 1 "Author: Cameron Clark")
   )
