@@ -306,15 +306,6 @@
       <shroudColor hex="595959"/>
     </diylc.electromechanical.PinHeader>
     <diylc.misc.CommonNode>
-      <name>CN4</name>
-      <point x="4.3" y="3.1"/>
-      <text>X</text>
-      <font name="Dialog.plain" size="14" style="0"/>
-      <color hex="000000"/>
-      <bgColor hex="eeeeee"/>
-      <shape>RECTANGLE</shape>
-    </diylc.misc.CommonNode>
-    <diylc.misc.CommonNode>
       <name>CN1</name>
       <point x="4.7" y="2.2"/>
       <text>X</text>
@@ -1132,6 +1123,30 @@
       <bodyColor hex="808080"/>
       <shroudColor hex="595959"/>
     </diylc.electromechanical.PinHeader>
+    <diylc.passive.Resistor>
+      <name>1KΩ</name>
+      <alpha>127</alpha>
+      <length value="9.0" unit="mm"/>
+      <width value="2.5" unit="mm"/>
+      <points>
+        <point x="6.4" y="4.9"/>
+        <point x="6.4" y="5.6"/>
+        <point x="6.4" y="5.25"/>
+      </points>
+      <bodyColor hex="e0c68b"/>
+      <borderColor hex="a59268"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="470.0"/>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </diylc.passive.Resistor>
     <diylc.connectivity.HookupWire>
       <name>W2</name>
       <alpha>127</alpha>
@@ -1178,7 +1193,7 @@
       <name>LAB1</name>
       <point x="6.8" y="3.7"/>
       <text>3.3 V</text>
-      <font reference="../../diylc.misc.CommonNode/font"/>
+      <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
       <horizontalAlignment>LEFT</horizontalAlignment>
       <verticalAlignment>CENTER</verticalAlignment>
@@ -1241,54 +1256,6 @@
       <bgColor hex="eeeeee"/>
       <shape>RECTANGLE</shape>
     </diylc.misc.CommonNode>
-    <diylc.connectivity.HookupWire>
-      <name>W5</name>
-      <alpha>127</alpha>
-      <controlPoints2>
-        <point x="5.3" y="5.7"/>
-        <point x="5.7" y="4.5"/>
-      </controlPoints2>
-      <color hex="990099"/>
-      <pointCount>TWO</pointCount>
-      <style>SOLID</style>
-      <smooth>true</smooth>
-      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
-      <gauge>_30</gauge>
-      <striped>false</striped>
-      <stripeColor hex="00ffff"/>
-    </diylc.connectivity.HookupWire>
-    <diylc.connectivity.HookupWire>
-      <name>W6</name>
-      <alpha>127</alpha>
-      <controlPoints2>
-        <point x="5.3" y="5.6"/>
-        <point x="5.7" y="4.4"/>
-      </controlPoints2>
-      <color hex="990099"/>
-      <pointCount>TWO</pointCount>
-      <style>SOLID</style>
-      <smooth>true</smooth>
-      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
-      <gauge>_30</gauge>
-      <striped>false</striped>
-      <stripeColor hex="00ffff"/>
-    </diylc.connectivity.HookupWire>
-    <diylc.connectivity.HookupWire>
-      <name>W7</name>
-      <alpha>127</alpha>
-      <controlPoints2>
-        <point x="5.3" y="5.5"/>
-        <point x="5.7" y="4.3"/>
-      </controlPoints2>
-      <color hex="990099"/>
-      <pointCount>TWO</pointCount>
-      <style>SOLID</style>
-      <smooth>true</smooth>
-      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
-      <gauge>_30</gauge>
-      <striped>false</striped>
-      <stripeColor hex="00ffff"/>
-    </diylc.connectivity.HookupWire>
     <diylc.connectivity.HookupWire>
       <name>W8</name>
       <alpha>127</alpha>
@@ -1618,6 +1585,108 @@
     <diylc.misc.CommonNode>
       <name>CN43</name>
       <point x="5.0" y="5.6"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.misc.CommonNode>
+      <name>CN44</name>
+      <point x="5.0" y="5.3"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.misc.CommonNode>
+      <name>CN45</name>
+      <point x="5.0" y="5.2"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.misc.CommonNode>
+      <name>CN46</name>
+      <point x="5.0" y="5.1"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.misc.CommonNode>
+      <name>CN47</name>
+      <point x="5.4" y="5.4"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.misc.CommonNode>
+      <name>CN48</name>
+      <point x="5.4" y="5.7"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.connectivity.HookupWire>
+      <name>W5</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="5.3" y="5.7"/>
+        <point x="5.7" y="4.5"/>
+      </controlPoints2>
+      <color hex="990099"/>
+      <pointCount>TWO</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <gauge>_30</gauge>
+      <striped>false</striped>
+      <stripeColor hex="00ffff"/>
+    </diylc.connectivity.HookupWire>
+    <diylc.connectivity.HookupWire>
+      <name>W6</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="5.3" y="5.6"/>
+        <point x="5.7" y="4.4"/>
+      </controlPoints2>
+      <color hex="990099"/>
+      <pointCount>TWO</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <gauge>_30</gauge>
+      <striped>false</striped>
+      <stripeColor hex="00ffff"/>
+    </diylc.connectivity.HookupWire>
+    <diylc.connectivity.HookupWire>
+      <name>W7</name>
+      <alpha>127</alpha>
+      <controlPoints2>
+        <point x="5.3" y="5.5"/>
+        <point x="5.7" y="4.3"/>
+      </controlPoints2>
+      <color hex="990099"/>
+      <pointCount>TWO</pointCount>
+      <style>SOLID</style>
+      <smooth>true</smooth>
+      <lastUpdatePointIndex>-1</lastUpdatePointIndex>
+      <gauge>_30</gauge>
+      <striped>false</striped>
+      <stripeColor hex="00ffff"/>
+    </diylc.connectivity.HookupWire>
+    <diylc.misc.CommonNode>
+      <name>CN49</name>
+      <point x="4.2" y="3.4"/>
       <text>X</text>
       <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
