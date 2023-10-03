@@ -49,7 +49,7 @@
       <columnCount>3</columnCount>
       <spacing value="0.1" unit="in"/>
       <shrouded>false</shrouded>
-      <bodyColor hex="808080"/>
+      <bodyColor hex="ffffff"/>
       <shroudColor hex="595959"/>
     </diylc.electromechanical.PinHeader>
     <diylc.semiconductors.TransistorTO220>
@@ -71,29 +71,6 @@
       <tabBorderColor hex="868686"/>
       <leadLength value="3.5" unit="mm"/>
     </diylc.semiconductors.TransistorTO220>
-    <diylc.passive.AxialFilmCapacitor>
-      <name>C1</name>
-      <alpha>127</alpha>
-      <length value="0.5" unit="in"/>
-      <width value="0.125" unit="in"/>
-      <points>
-        <point x="4.6" y="3.4"/>
-        <point x="4.6" y="3.5"/>
-        <point x="4.6" y="3.45"/>
-      </points>
-      <bodyColor hex="ffe303"/>
-      <borderColor hex="b29e02"/>
-      <labelColor hex="000000"/>
-      <leadColor hex="cccccc"/>
-      <display>NAME</display>
-      <flipStanding>false</flipStanding>
-      <labelOriantation>Directional</labelOriantation>
-      <moveLabel>false</moveLabel>
-      <hideShortLeads>false</hideShortLeads>
-      <voltage>_63V</voltage>
-      <showOuterFoil>false</showOuterFoil>
-      <outerFoilColor hex="ffffff"/>
-    </diylc.passive.AxialFilmCapacitor>
     <diylc.semiconductors.TransistorTO126>
       <name>LDO</name>
       <alpha>100</alpha>
@@ -111,29 +88,6 @@
       <folded>false</folded>
       <leadLength value="3.5" unit="mm"/>
     </diylc.semiconductors.TransistorTO126>
-    <diylc.passive.AxialFilmCapacitor>
-      <name>C2</name>
-      <alpha>127</alpha>
-      <length value="0.5" unit="in"/>
-      <width value="0.125" unit="in"/>
-      <points>
-        <point x="5.1" y="3.5"/>
-        <point x="5.1" y="3.6"/>
-        <point x="5.1" y="3.55"/>
-      </points>
-      <bodyColor hex="ffe303"/>
-      <borderColor hex="b29e02"/>
-      <labelColor hex="000000"/>
-      <leadColor hex="cccccc"/>
-      <display>NAME</display>
-      <flipStanding>false</flipStanding>
-      <labelOriantation>Directional</labelOriantation>
-      <moveLabel>false</moveLabel>
-      <hideShortLeads>false</hideShortLeads>
-      <voltage>_63V</voltage>
-      <showOuterFoil>false</showOuterFoil>
-      <outerFoilColor hex="ffffff"/>
-    </diylc.passive.AxialFilmCapacitor>
     <diylc.electromechanical.PinHeader>
       <name>PH2</name>
       <alpha>127</alpha>
@@ -175,7 +129,7 @@
       <columnCount>3</columnCount>
       <spacing value="0.1" unit="in"/>
       <shrouded>false</shrouded>
-      <bodyColor hex="808080"/>
+      <bodyColor hex="ffffff"/>
       <shroudColor hex="595959"/>
     </diylc.electromechanical.PinHeader>
     <diylc.electromechanical.PinHeader>
@@ -343,7 +297,7 @@
     </diylc.misc.CommonNode>
     <diylc.misc.CommonNode>
       <name>CN6</name>
-      <point x="5.0" y="3.9"/>
+      <point x="5.0" y="4.0"/>
       <text>X</text>
       <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
@@ -352,7 +306,7 @@
     </diylc.misc.CommonNode>
     <diylc.misc.CommonNode>
       <name>CN7</name>
-      <point x="5.0" y="4.0"/>
+      <point x="5.0" y="4.1"/>
       <text>X</text>
       <font name="Dialog.plain" size="14" style="0"/>
       <color hex="000000"/>
@@ -363,9 +317,9 @@
       <name>J1</name>
       <alpha>127</alpha>
       <points>
-        <point x="4.9" y="3.9"/>
-        <point x="5.1" y="4.0"/>
-        <point x="5.0" y="3.95"/>
+        <point x="4.9" y="4.0"/>
+        <point x="5.1" y="4.1"/>
+        <point x="5.0" y="4.05"/>
       </points>
       <bodyColor hex="ffffff"/>
       <borderColor hex="000000"/>
@@ -1147,6 +1101,62 @@
       <colorCode>_5_BAND</colorCode>
       <shape>Standard</shape>
     </diylc.passive.Resistor>
+    <diylc.passive.RadialFilmCapacitor>
+      <name>C4</name>
+      <alpha>127</alpha>
+      <length value="4.6" unit="mm"/>
+      <width value="2.5" unit="mm"/>
+      <points>
+        <point x="4.6" y="3.4"/>
+        <point x="4.6" y="3.5"/>
+        <point x="4.6" y="3.45"/>
+      </points>
+      <bodyColor hex="ff6666"/>
+      <borderColor hex="a03140"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="1000.0" unit="pF"/>
+      <voltage>_63V</voltage>
+      <voltageNew value="63.0" unit="V"/>
+      <showOuterFoil>false</showOuterFoil>
+      <outerFoilColor hex="ffffff"/>
+      <type>WIMA FKP-02 (2.5mm)</type>
+      <pinSpacing value="2.5" unit="mm"/>
+      <shape>BOX</shape>
+    </diylc.passive.RadialFilmCapacitor>
+    <diylc.passive.RadialFilmCapacitor>
+      <name>C1</name>
+      <alpha>127</alpha>
+      <length value="4.6" unit="mm"/>
+      <width value="2.5" unit="mm"/>
+      <points>
+        <point x="5.0" y="3.5"/>
+        <point x="5.0" y="3.6"/>
+        <point x="5.0" y="3.55"/>
+      </points>
+      <bodyColor hex="ff6666"/>
+      <borderColor hex="a03140"/>
+      <labelColor hex="000000"/>
+      <leadColor hex="cccccc"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <labelOriantation>Directional</labelOriantation>
+      <moveLabel>false</moveLabel>
+      <hideShortLeads>false</hideShortLeads>
+      <value value="1000.0" unit="pF"/>
+      <voltage>_63V</voltage>
+      <voltageNew value="63.0" unit="V"/>
+      <showOuterFoil>false</showOuterFoil>
+      <outerFoilColor hex="ffffff"/>
+      <type>WIMA FKP-02 (2.5mm)</type>
+      <pinSpacing value="2.5" unit="mm"/>
+      <shape>BOX</shape>
+    </diylc.passive.RadialFilmCapacitor>
     <diylc.connectivity.HookupWire>
       <name>W2</name>
       <alpha>127</alpha>
