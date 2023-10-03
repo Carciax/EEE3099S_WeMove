@@ -2,7 +2,7 @@
 ## Makefile generated for component 'i_1metre'. 
 ## 
 ## Makefile     : i_1metre.mk
-## Generated on : Mon Oct 02 18:13:59 2023
+## Generated on : Tue Oct 03 18:06:26 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/i_1metre.elf
 ## Product type : executable
 ## 
@@ -196,7 +196,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/include -I$(MATLAB_ROOT)/toolbox/target/shared/svd/common/include -I$(START_DIR)/i_1metre_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS/$(SAMD_CMSIS_VERSION)/CMSIS/Include -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS-Atmel/$(SAMD_CMSIS_ATMEL_VERSION)/CMSIS/Device/ATMEL -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/cores/arduino -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/variants/nano_33_iot -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/include -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/include
+INCLUDES_BUILDINFO = -I$(START_DIR) -I$(MATLAB_ROOT)/toolbox/target/shared/svd/common/include -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/include -I$(START_DIR)/i_1metre_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS/$(SAMD_CMSIS_VERSION)/CMSIS/Include -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS-Atmel/$(SAMD_CMSIS_ATMEL_VERSION)/CMSIS/Device/ATMEL -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/cores/arduino -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/variants/nano_33_iot -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/include -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/include
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -209,7 +209,7 @@ DEFINES_BUILD_ARGS = -DCLASSIC_INTERFACE=0 -DALLOCATIONFCN=0 -DONESTEPFCN=1 -DTE
 DEFINES_CUSTOM = 
 DEFINES_OPTS = -DTID01EQ=0
 DEFINES_SKIPFORSIL = -DXCP_CUSTOM_PLATFORM -DEXIT_FAILURE=1 -DEXTMODE_DISABLEPRINTF -DEXTMODE_DISABLETESTING -DEXTMODE_DISABLE_ARGS_PROCESSING=1 -DSTACK_SIZE=64 -DRT
-DEFINES_STANDARD = -DMODEL=i_1metre -DNUMST=2 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
+DEFINES_STANDARD = -DMODEL=i_1metre -DNUMST=1 -DNCSTATES=0 -DHAVESTDIO -DMODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
 
 DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(DEFINES_SKIPFORSIL) $(DEFINES_STANDARD)
 
@@ -217,7 +217,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp $(START_DIR)/i_1metre_ert_rtw/i_1metre.c $(START_DIR)/i_1metre_ert_rtw/i_1metre_data.c $(START_DIR)/i_1metre_ert_rtw/rtGetInf.c $(START_DIR)/i_1metre_ert_rtw/rtGetNaN.c $(START_DIR)/i_1metre_ert_rtw/rt_nonfinite.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
+SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c $(START_DIR)/i_1metre_ert_rtw/i_1metre.c $(START_DIR)/i_1metre_ert_rtw/i_1metre_data.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
 
 MAIN_SRC = $(START_DIR)/i_1metre_ert_rtw/ert_main.c
 
@@ -227,7 +227,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_arduino_digitalio.o MW_PWM.o MW_PWMDriver.o ArduinoPinHandleMap.o i_1metre.o i_1metre_data.o rtGetInf.o rtGetNaN.o rt_nonfinite.o MW_ArduinoHWInit.o io_wrappers.o arduinoARM_M0plusScheduler.o m0m1m0plus_multitasking.o
+OBJS = MW_AnalogInput.o ArduinoPinHandleMap.o MW_arduino_digitalio.o MW_PWM.o MW_PWMDriver.o i_1metre.o i_1metre_data.o MW_ArduinoHWInit.o io_wrappers.o arduinoARM_M0plusScheduler.o m0m1m0plus_multitasking.o
 
 MAIN_OBJ = ert_main.o
 
@@ -580,6 +580,14 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
+MW_AnalogInput.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+ArduinoPinHandleMap.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp
+	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
 MW_arduino_digitalio.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
@@ -592,10 +600,6 @@ MW_PWMDriver.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/too
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-ArduinoPinHandleMap.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
 ert_main.o : $(START_DIR)/i_1metre_ert_rtw/ert_main.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
@@ -605,18 +609,6 @@ i_1metre.o : $(START_DIR)/i_1metre_ert_rtw/i_1metre.c
 
 
 i_1metre_data.o : $(START_DIR)/i_1metre_ert_rtw/i_1metre_data.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rtGetInf.o : $(START_DIR)/i_1metre_ert_rtw/rtGetInf.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rtGetNaN.o : $(START_DIR)/i_1metre_ert_rtw/rtGetNaN.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rt_nonfinite.o : $(START_DIR)/i_1metre_ert_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
