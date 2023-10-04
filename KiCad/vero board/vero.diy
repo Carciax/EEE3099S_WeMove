@@ -260,15 +260,6 @@
       <shroudColor hex="595959"/>
     </diylc.electromechanical.PinHeader>
     <diylc.misc.CommonNode>
-      <name>CN1</name>
-      <point x="4.7" y="2.2"/>
-      <text>X</text>
-      <font name="Dialog.plain" size="14" style="0"/>
-      <color hex="000000"/>
-      <bgColor hex="eeeeee"/>
-      <shape>RECTANGLE</shape>
-    </diylc.misc.CommonNode>
-    <diylc.misc.CommonNode>
       <name>CN2</name>
       <point x="0.0" y="0.9"/>
       <text>X</text>
