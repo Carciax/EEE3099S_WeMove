@@ -1361,7 +1361,7 @@
         <point x="4.9" y="4.9"/>
         <point x="5.1" y="4.7"/>
       </controlPoints2>
-      <color hex="00ff00"/>
+      <color hex="ff00ff"/>
       <pointCount>TWO</pointCount>
       <style>SOLID</style>
       <smooth>true</smooth>
@@ -1377,7 +1377,7 @@
         <point x="4.9" y="4.8"/>
         <point x="5.1" y="4.6"/>
       </controlPoints2>
-      <color hex="00ff00"/>
+      <color hex="ff00ff"/>
       <pointCount>TWO</pointCount>
       <style>SOLID</style>
       <smooth>true</smooth>
