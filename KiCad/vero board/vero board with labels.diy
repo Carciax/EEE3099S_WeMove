@@ -141,13 +141,9 @@
         <point x="4.1" y="3.9"/>
         <point x="4.1" y="4.0"/>
         <point x="4.1" y="4.1"/>
-        <point x="4.1" y="4.2"/>
-        <point x="4.1" y="4.3"/>
-        <point x="4.1" y="4.4"/>
-        <point x="4.1" y="4.5"/>
       </controlPoints>
       <rowCount>1</rowCount>
-      <columnCount>8</columnCount>
+      <columnCount>4</columnCount>
       <spacing value="0.1" unit="in"/>
       <shrouded>false</shrouded>
       <bodyColor hex="808080"/>
@@ -958,7 +954,7 @@
       <shroudColor hex="595959"/>
     </diylc.electromechanical.PinHeader>
     <diylc.passive.Resistor>
-      <name>R1</name>
+      <name>10K</name>
       <alpha>127</alpha>
       <length value="9.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
@@ -981,7 +977,7 @@
       <shape>Standard</shape>
     </diylc.passive.Resistor>
     <diylc.passive.Resistor>
-      <name>R2</name>
+      <name>22K</name>
       <alpha>127</alpha>
       <length value="9.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
@@ -1004,7 +1000,7 @@
       <shape>Standard</shape>
     </diylc.passive.Resistor>
     <diylc.passive.Resistor>
-      <name>R3</name>
+      <name>22K</name>
       <alpha>127</alpha>
       <length value="9.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
@@ -1027,7 +1023,7 @@
       <shape>Standard</shape>
     </diylc.passive.Resistor>
     <diylc.passive.Resistor>
-      <name>R4</name>
+      <name>10K</name>
       <alpha>127</alpha>
       <length value="9.0" unit="mm"/>
       <width value="2.5" unit="mm"/>
@@ -1050,19 +1046,16 @@
       <shape>Standard</shape>
     </diylc.passive.Resistor>
     <diylc.electromechanical.PinHeader>
-      <name>fhjj</name>
+      <name>left encoder</name>
       <alpha>127</alpha>
       <orientation>DEFAULT</orientation>
       <controlPoints>
         <point x="4.7" y="5.1"/>
         <point x="4.7" y="5.2"/>
         <point x="4.7" y="5.3"/>
-        <point x="4.7" y="5.4"/>
-        <point x="4.7" y="5.5"/>
-        <point x="4.7" y="5.6"/>
       </controlPoints>
       <rowCount>1</rowCount>
-      <columnCount>6</columnCount>
+      <columnCount>3</columnCount>
       <spacing value="0.1" unit="in"/>
       <shrouded>false</shrouded>
       <bodyColor hex="808080"/>
@@ -1148,6 +1141,39 @@
       <pinSpacing value="2.5" unit="mm"/>
       <shape>BOX</shape>
     </diylc.passive.RadialFilmCapacitor>
+    <diylc.electromechanical.PinHeader>
+      <name>right encoder</name>
+      <alpha>127</alpha>
+      <orientation>DEFAULT</orientation>
+      <controlPoints>
+        <point x="4.7" y="5.4"/>
+        <point x="4.7" y="5.5"/>
+        <point x="4.7" y="5.6"/>
+      </controlPoints>
+      <rowCount>1</rowCount>
+      <columnCount>3</columnCount>
+      <spacing value="0.1" unit="in"/>
+      <shrouded>false</shrouded>
+      <bodyColor hex="808080"/>
+      <shroudColor hex="595959"/>
+    </diylc.electromechanical.PinHeader>
+    <diylc.electromechanical.PinHeader>
+      <name>PH13</name>
+      <alpha>127</alpha>
+      <orientation>DEFAULT</orientation>
+      <controlPoints>
+        <point x="4.1" y="4.2"/>
+        <point x="4.1" y="4.3"/>
+        <point x="4.1" y="4.4"/>
+        <point x="4.1" y="4.5"/>
+      </controlPoints>
+      <rowCount>1</rowCount>
+      <columnCount>4</columnCount>
+      <spacing value="0.1" unit="in"/>
+      <shrouded>false</shrouded>
+      <bodyColor hex="808080"/>
+      <shroudColor hex="595959"/>
+    </diylc.electromechanical.PinHeader>
     <diylc.connectivity.HookupWire>
       <name>W2</name>
       <alpha>127</alpha>
@@ -1694,6 +1720,76 @@
       <bgColor hex="eeeeee"/>
       <shape>RECTANGLE</shape>
     </diylc.misc.CommonNode>
+    <diylc.misc.Label>
+      <name>LAB5</name>
+      <point x="6.0" y="3.5"/>
+      <text>&lt;br&gt;&lt;br&gt;H-bridge power</text>
+      <font name="AdobeFanHeitiStd-Bold" size="16" style="1"/>
+      <color hex="333333"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_90</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB6</name>
+      <point x="5.5" y="3.4"/>
+      <text>Sitch for H-brigde&lt;br&gt; &lt;br&gt; </text>
+      <font name="Dialog.bold" size="15" style="1"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB7</name>
+      <point x="6.0" y="5.6"/>
+      <text>&lt;br&gt;&lt;br&gt;Power to the line sensor</text>
+      <font name="AdobeFanHeitiStd-Bold" size="16" style="1"/>
+      <color hex="333333"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB8</name>
+      <point x="5.2" y="5.7"/>
+      <text> &lt;br&gt; &lt;br&gt; &lt;br&gt;Line sensor&lt;br&gt;input signal</text>
+      <font name="Dialog.bold" size="15" style="1"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB9</name>
+      <point x="4.0" y="3.5"/>
+      <text>Input power&lt;br&gt; </text>
+      <font name="Dialog.bold" size="15" style="1"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_270</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB10</name>
+      <point x="4.0" y="4.6"/>
+      <text>H-brigde conection &lt;br&gt; </text>
+      <font name="Dialog.bold" size="15" style="1"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_270</orientation>
+    </diylc.misc.Label>
+    <diylc.misc.Label>
+      <name>LAB11</name>
+      <point x="4.0" y="4.0"/>
+      <text>Ultrasonic&lt;br&gt; </text>
+      <font name="Dialog.bold" size="15" style="1"/>
+      <color hex="000000"/>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>_270</orientation>
+    </diylc.misc.Label>
   </components>
   <groups/>
   <lockedLayers/>
