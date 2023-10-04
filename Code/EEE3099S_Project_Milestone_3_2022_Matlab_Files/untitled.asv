@@ -1,3 +1,0 @@
-a = arduino('/dev/cu.usbmodem14201','Nano33IoT');
-a.writeDigitalPin('A7', 1);
-disp(a)

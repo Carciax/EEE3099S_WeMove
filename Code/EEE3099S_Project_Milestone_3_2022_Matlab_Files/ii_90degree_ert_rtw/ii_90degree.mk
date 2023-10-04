@@ -2,7 +2,7 @@
 ## Makefile generated for component 'ii_90degree'. 
 ## 
 ## Makefile     : ii_90degree.mk
-## Generated on : Wed Oct 04 14:11:00 2023
+## Generated on : Wed Oct 04 14:42:50 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/ii_90degree.elf
 ## Product type : executable
 ## 
@@ -217,7 +217,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c $(START_DIR)/ii_90degree_ert_rtw/ii_90degree.c $(START_DIR)/ii_90degree_ert_rtw/ii_90degree_data.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
+SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp $(START_DIR)/ii_90degree_ert_rtw/ii_90degree.c $(START_DIR)/ii_90degree_ert_rtw/ii_90degree_data.c $(START_DIR)/ii_90degree_ert_rtw/rtGetInf.c $(START_DIR)/ii_90degree_ert_rtw/rtGetNaN.c $(START_DIR)/ii_90degree_ert_rtw/rt_nonfinite.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
 
 MAIN_SRC = $(START_DIR)/ii_90degree_ert_rtw/ert_main.c
 
@@ -227,7 +227,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_AnalogInput.o ArduinoPinHandleMap.o MW_arduino_digitalio.o MW_PWM.o MW_PWMDriver.o ii_90degree.o ii_90degree_data.o MW_ArduinoHWInit.o io_wrappers.o mw_samd_nvic.o arduinoARM_M0plusScheduler.o m0m1m0plus_multitasking.o
+OBJS = MW_PWM.o MW_PWMDriver.o ArduinoPinHandleMap.o MW_arduino_digitalio.o ii_90degree.o ii_90degree_data.o rtGetInf.o rtGetNaN.o rt_nonfinite.o MW_ArduinoHWInit.o io_wrappers.o mw_samd_nvic.o arduinoARM_M0plusScheduler.o m0m1m0plus_multitasking.o
 
 MAIN_OBJ = ert_main.o
 
@@ -608,8 +608,12 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-MW_AnalogInput.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp
+MW_PWM.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
+
+
+MW_PWMDriver.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
 ArduinoPinHandleMap.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp
@@ -618,14 +622,6 @@ ArduinoPinHandleMap.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R20
 
 MW_arduino_digitalio.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
-MW_PWM.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
-MW_PWMDriver.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
 ert_main.o : $(START_DIR)/ii_90degree_ert_rtw/ert_main.c
@@ -637,6 +633,18 @@ ii_90degree.o : $(START_DIR)/ii_90degree_ert_rtw/ii_90degree.c
 
 
 ii_90degree_data.o : $(START_DIR)/ii_90degree_ert_rtw/ii_90degree_data.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtGetInf.o : $(START_DIR)/ii_90degree_ert_rtw/rtGetInf.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtGetNaN.o : $(START_DIR)/ii_90degree_ert_rtw/rtGetNaN.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rt_nonfinite.o : $(START_DIR)/ii_90degree_ert_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
