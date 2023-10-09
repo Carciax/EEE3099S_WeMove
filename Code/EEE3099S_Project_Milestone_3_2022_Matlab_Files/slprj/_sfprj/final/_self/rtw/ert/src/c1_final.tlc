@@ -1,0 +1,145 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   18 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "distanceTarget"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "distanceTarget"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "fallingEdge"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "fallingEdge"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "rotationHalf"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "rotationHalf"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "rotationFull"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "rotationFull"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "path"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "path"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "rotationTarget"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "rotationTarget"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "risingEdge"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "risingEdge"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "lineSensorFalling"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "lineSensorFalling"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "lineSensorRising"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "lineSensorRising"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "rotationFalling"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "rotationFalling"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "fallingEdgeDetected"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "fallingEdgeDetected"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "intersections"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "intersections"\
+      SrcLocation  ""\
+      Dimensions   [5,3,4]\
+    }\
+    ChartData {\
+      Name         "oldIntersection"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "oldIntersection"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "currentIntersection"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "currentIntersection"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "stopZoneFound"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "stopZoneFound"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "defaultPath"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "defaultPath"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c1_final"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c1_final"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
