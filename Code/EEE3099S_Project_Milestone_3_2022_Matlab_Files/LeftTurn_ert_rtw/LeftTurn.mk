@@ -2,7 +2,7 @@
 ## Makefile generated for component 'LeftTurn'. 
 ## 
 ## Makefile     : LeftTurn.mk
-## Generated on : Wed Oct 11 15:38:31 2023
+## Generated on : Wed Oct 11 18:25:31 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/LeftTurn.elf
 ## Product type : executable
 ## 
@@ -217,7 +217,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_Ultrasonic.cpp $(START_DIR)/LeftTurn_ert_rtw/LeftTurn.c $(START_DIR)/LeftTurn_ert_rtw/LeftTurn_data.c $(START_DIR)/LeftTurn_ert_rtw/rtGetInf.c $(START_DIR)/LeftTurn_ert_rtw/rtGetNaN.c $(START_DIR)/LeftTurn_ert_rtw/rt_nonfinite.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
+SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp $(START_DIR)/LeftTurn_ert_rtw/LeftTurn.c $(START_DIR)/LeftTurn_ert_rtw/LeftTurn_data.c $(START_DIR)/LeftTurn_ert_rtw/rtGetInf.c $(START_DIR)/LeftTurn_ert_rtw/rtGetNaN.c $(START_DIR)/LeftTurn_ert_rtw/rt_nonfinite.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
 
 MAIN_SRC = $(START_DIR)/LeftTurn_ert_rtw/ert_main.c
 
@@ -227,7 +227,7 @@ ALL_SRCS = $(SRCS) $(MAIN_SRC)
 ## OBJECTS
 ###########################################################################
 
-OBJS = MW_arduino_digitalio.o MW_PWM.o MW_PWMDriver.o ArduinoPinHandleMap.o MW_AnalogInput.o MW_Ultrasonic.o LeftTurn.o LeftTurn_data.o rtGetInf.o rtGetNaN.o rt_nonfinite.o MW_ArduinoHWInit.o io_wrappers.o mw_samd_nvic.o arduinoARM_M0plusScheduler.o m0m1m0plus_multitasking.o
+OBJS = MW_arduino_digitalio.o MW_PWM.o MW_PWMDriver.o ArduinoPinHandleMap.o MW_AnalogInput.o LeftTurn.o LeftTurn_data.o rtGetInf.o rtGetNaN.o rt_nonfinite.o MW_ArduinoHWInit.o io_wrappers.o mw_samd_nvic.o arduinoARM_M0plusScheduler.o m0m1m0plus_multitasking.o
 
 MAIN_OBJ = ert_main.o
 
@@ -625,10 +625,6 @@ ArduinoPinHandleMap.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R20
 
 
 MW_AnalogInput.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp
-	$(CPP) $(CPPFLAGS) -o "$@" "$<"
-
-
-MW_Ultrasonic.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_Ultrasonic.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 

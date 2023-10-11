@@ -14,7 +14,7 @@
       IsTestPoint  0\
     }\
     ChartData {\
-      Name         "is_active_c4_LeftTurn"\
+      Name         "is_active_c1_LeftTurn"\
       Description  "StateIsActive"\
       SFName       ""\
       Path         ""\
