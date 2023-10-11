@@ -2,7 +2,7 @@
 ## Makefile generated for component 'LeftTurn'. 
 ## 
 ## Makefile     : LeftTurn.mk
-## Generated on : Wed Oct 11 13:10:01 2023
+## Generated on : Wed Oct 11 15:38:31 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/LeftTurn.elf
 ## Product type : executable
 ## 
