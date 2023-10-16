@@ -1324,15 +1324,15 @@
       <name>W10</name>
       <alpha>127</alpha>
       <controlPoints2>
-        <point x="6.2" y="4.4"/>
-        <point x="5.8" y="3.2"/>
-        <point x="5.7" y="3.7"/>
-        <point x="5.6" y="4.0"/>
-        <point x="5.5" y="4.3"/>
+        <point x="4.9" y="3.8"/>
+        <point x="5.1" y="3.7"/>
+        <point x="5.4" y="3.7"/>
+        <point x="5.4" y="4.0"/>
+        <point x="5.4" y="4.3"/>
         <point x="5.4" y="4.9"/>
         <point x="5.3" y="5.1"/>
       </controlPoints2>
-      <color hex="00ffff"/>
+      <color hex="990099"/>
       <pointCount>SEVEN</pointCount>
       <style>SOLID</style>
       <smooth>true</smooth>
@@ -1345,15 +1345,15 @@
       <name>W11</name>
       <alpha>127</alpha>
       <controlPoints2>
-        <point x="6.2" y="4.1"/>
-        <point x="5.8" y="3.4"/>
-        <point x="5.7" y="3.4"/>
-        <point x="5.5" y="4.1"/>
-        <point x="5.3" y="4.8"/>
-        <point x="5.4" y="4.6"/>
+        <point x="4.9" y="3.9"/>
+        <point x="5.1" y="3.8"/>
+        <point x="5.3" y="3.6"/>
+        <point x="5.3" y="4.1"/>
+        <point x="5.3" y="4.6"/>
+        <point x="5.3" y="4.6"/>
         <point x="5.3" y="4.8"/>
       </controlPoints2>
-      <color hex="00ffff"/>
+      <color hex="990099"/>
       <pointCount>SEVEN</pointCount>
       <style>SOLID</style>
       <smooth>true</smooth>
@@ -1790,6 +1790,24 @@
       <verticalAlignment>CENTER</verticalAlignment>
       <orientation>_270</orientation>
     </diylc.misc.Label>
+    <diylc.misc.CommonNode>
+      <name>CN1</name>
+      <point x="5.0" y="3.9"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
+    <diylc.misc.CommonNode>
+      <name>CN4</name>
+      <point x="5.0" y="3.8"/>
+      <text>X</text>
+      <font name="Dialog.plain" size="14" style="0"/>
+      <color hex="000000"/>
+      <bgColor hex="eeeeee"/>
+      <shape>RECTANGLE</shape>
+    </diylc.misc.CommonNode>
   </components>
   <groups/>
   <lockedLayers/>
