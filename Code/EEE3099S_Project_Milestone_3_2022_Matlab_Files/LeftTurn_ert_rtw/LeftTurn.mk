@@ -2,7 +2,11 @@
 ## Makefile generated for component 'LeftTurn'. 
 ## 
 ## Makefile     : LeftTurn.mk
+<<<<<<< Updated upstream
 ## Generated on : Thu Oct 12 16:13:56 2023
+=======
+## Generated on : Wed Oct 11 15:01:56 2023
+>>>>>>> Stashed changes
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/LeftTurn.elf
 ## Product type : executable
 ## 
@@ -18,18 +22,17 @@
 
 PRODUCT_NAME              = LeftTurn
 MAKEFILE                  = LeftTurn.mk
-MATLAB_ROOT               = /Applications/MATLAB_R2023b.app
-MATLAB_BIN                = /Applications/MATLAB_R2023b.app/bin
-MATLAB_ARCH_BIN           = $(MATLAB_BIN)/maci64
-START_DIR                 = /Users/cameronclark/Documents/UCT/EEE3099S/EEE3099S_CKT/Code/EEE3099S_Project_Milestone_3_2022_Matlab_Files
+MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2023b
+MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2023b/bin
+MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
+START_DIR                 = C:/Users/kianf/OneDrive/Desktop/WEMOVE~1/EEE309~1/Code/EEE309~3
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
 TGT_FCN_LIB               = None
 MODEL_HAS_DYNAMICALLY_LOADED_SFCNS = 0
 RELATIVE_PATH_TO_ANCHOR   = ..
-SLIB_PATH                 = /Users/cameronclark/Documents/MATLAB/R2023b/ArduinoStaticLibrary/ArduinoNano33IoT/FasterRuns
-SSLIB_PATH                = /Users/cameronclark/Documents/MATLAB/R2023b/ArduinoStaticLibrary/ArduinoNano33IoT/FasterRuns
+SLIB_PATH                 = C:/Users/kianf/DOCUME~1/MATLAB/R2023b/ARDUIN~1/ARDUIN~1/FASTER~1
 C_STANDARD_OPTS           = 
 CPP_STANDARD_OPTS         = 
 
@@ -58,6 +61,7 @@ CPP_STANDARD_OPTS         =
 # MACROS
 #-----------
 
+SHELL                       = %SystemRoot%/system32/cmd.exe
 PRODUCT_HEX                 = $(RELATIVE_PATH_TO_ANCHOR)/$(PRODUCT_NAME).hex
 PRODUCT_BIN                 = $(RELATIVE_PATH_TO_ANCHOR)/$(PRODUCT_NAME).bin
 ARDUINO_TOOLS               = $(ARDUINO_PACKAGES_TOOLS_ROOT)/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin
@@ -109,7 +113,7 @@ DOWNLOAD =
 EXECUTE = $(PRODUCT)
 
 # Builder: Make Tool
-MAKE_PATH = %MATLAB%/bin/maci64
+MAKE_PATH = %MATLAB%\bin\win64
 MAKE = "$(MAKE_PATH)/gmake"
 
 
@@ -196,7 +200,7 @@ BUILD_TYPE = "Top-Level Standalone Executable"
 ## INCLUDE PATHS
 ###########################################################################
 
-INCLUDES_BUILDINFO = -I$(START_DIR) -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/include -I$(MATLAB_ROOT)/toolbox/target/shared/svd/common/include -I$(START_DIR)/LeftTurn_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS/$(SAMD_CMSIS_VERSION)/CMSIS/Include -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS-Atmel/$(SAMD_CMSIS_ATMEL_VERSION)/CMSIS/Device/ATMEL -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/cores/arduino -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/variants/nano_33_iot -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/include -I/Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/include
+INCLUDES_BUILDINFO = -I$(START_DIR) -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2023b/toolbox/target/SUPPOR~1/ARDUIN~2/include -I$(MATLAB_ROOT)/toolbox/target/shared/svd/common/include -I$(START_DIR)/LeftTurn_ert_rtw -I$(MATLAB_ROOT)/extern/include -I$(MATLAB_ROOT)/simulink/include -I$(MATLAB_ROOT)/rtw/c/src -I$(MATLAB_ROOT)/rtw/c/src/ext_mode/common -I$(MATLAB_ROOT)/rtw/c/ert -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS/$(SAMD_CMSIS_VERSION)/CMSIS/Include -I$(ARDUINO_SAMD_ROOT)/tools/CMSIS-Atmel/$(SAMD_CMSIS_ATMEL_VERSION)/CMSIS/Device/ATMEL -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/cores/arduino -I$(ARDUINO_SAMD_ROOT)/hardware/samd/$(SAMD_LIB_VERSION)/variants/nano_33_iot -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2023b/toolbox/target/SUPPOR~1/ARDUIN~1/include -IC:/PROGRA~3/MATLAB/SUPPOR~1/R2023b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/include -I$(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/include
 
 INCLUDES = $(INCLUDES_BUILDINFO)
 
@@ -217,7 +221,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_Ultrasonic.cpp $(START_DIR)/LeftTurn_ert_rtw/LeftTurn.c $(START_DIR)/LeftTurn_ert_rtw/LeftTurn_data.c $(START_DIR)/LeftTurn_ert_rtw/rtGetInf.c $(START_DIR)/LeftTurn_ert_rtw/rtGetNaN.c $(START_DIR)/LeftTurn_ert_rtw/rt_nonfinite.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
+SRCS = C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_Ultrasonic.cpp $(START_DIR)/LeftTurn_ert_rtw/LeftTurn.c $(START_DIR)/LeftTurn_ert_rtw/LeftTurn_data.c $(START_DIR)/LeftTurn_ert_rtw/rtGetInf.c $(START_DIR)/LeftTurn_ert_rtw/rtGetNaN.c $(START_DIR)/LeftTurn_ert_rtw/rt_nonfinite.c C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m0m1m0plus_multitasking.c
 
 MAIN_SRC = $(START_DIR)/LeftTurn_ert_rtw/ert_main.c
 
@@ -243,7 +247,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-LIBS = $(SSLIB_PATH)/MW_RebuildSrc_Core.o
+LIBS = $(SLIB_PATH)/MW_RebuildSrc_Core.o
 
 ###########################################################################
 ## SYSTEM LIBRARIES
@@ -468,31 +472,31 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-%.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.c
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-%.S.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.s
+%.S.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.s
 	$(AS) $(ASFLAGS) -o "$@" "$<"
 
 
-%.S.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.S
+%.S.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.S
 	$(AS) $(ASFLAGS) -o "$@" "$<"
 
 
-%.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.cpp
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-%.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.cc
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.cc
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-%.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.C
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.C
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-%.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.cxx
+%.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/%.cxx
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
@@ -608,27 +612,27 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS) $(MAIN_OBJ)
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-MW_arduino_digitalio.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp
+MW_arduino_digitalio.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_arduino_digitalio.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-MW_PWM.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp
+MW_PWM.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWM.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-MW_PWMDriver.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c
+MW_PWMDriver.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_PWMDriver.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-ArduinoPinHandleMap.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp
+ArduinoPinHandleMap.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/ArduinoPinHandleMap.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-MW_AnalogInput.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp
+MW_AnalogInput.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_AnalogInput.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-MW_Ultrasonic.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_Ultrasonic.cpp
+MW_Ultrasonic.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/MW_Ultrasonic.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
@@ -656,19 +660,19 @@ rt_nonfinite.o : $(START_DIR)/LeftTurn_ert_rtw/rt_nonfinite.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-MW_ArduinoHWInit.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp
+MW_ArduinoHWInit.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/src/MW_ArduinoHWInit.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-io_wrappers.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp
+io_wrappers.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/io_wrappers.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
-mw_samd_nvic.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c
+mw_samd_nvic.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinobase/src/mw_samd_nvic.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-arduinoARM_M0plusScheduler.o : /Users/cameronclark/Documents/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp
+arduinoARM_M0plusScheduler.o : C:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/target/supportpackages/arduinotarget/scheduler/src/arduinoARM_M0plusScheduler.cpp
 	$(CPP) $(CPPFLAGS) -o "$@" "$<"
 
 
