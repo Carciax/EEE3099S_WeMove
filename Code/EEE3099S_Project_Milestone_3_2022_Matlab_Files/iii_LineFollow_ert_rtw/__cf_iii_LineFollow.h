@@ -1,0 +1,45 @@
+#ifndef CF_iii_LineFollow_H__
+#define CF_iii_LineFollow_H__
+#define _y7_mpHSPCt2D2LUfgt0sB0	5U
+#define _GJurNUnrpS80cGgiENVUu0	4U
+#define _emIIW_7YN0QOZ3WhxvJi41	21U
+#define _p01KwLUrlxQyp_iCq4iLA2	1.0
+#define __HOkNYCCIgIkrPMzfarLc2	3.0
+#define _hCXUd_x6pbKZfXtyKXEw82	8
+#define _RAQgyWVtpyqfEVcLRZFTL_	6
+#define _nfvdmbxYkVXzXnpHyWwmg2	3
+#define _TX0w66L1XZtKXwhz3nT5Q0	255.0
+#define _gN74BbsU5wqNjkJbC9b672	2
+#define _9sORNlLawtAqgKqUzCJc20	0.01
+#define _eTyz2v5u0kC8gQ_w7T4vi1	0xFF800000U
+#define _IfqgJOo_0kGGrK4yerXJx_	2.0
+#define _2KXuAphrqc_TLcinUGD4E1	7
+#define _8Ew6t8ZE5Di8prqlF9sWH1	17U
+#define _ko6ArOnxQVl22oHhrMlSz2	0xFFC00000U
+#define _1upaaZGyJRIPK_I_ChRY10	0x7FFFFFFFU
+#define _N3graLvOGwWJsHFjlQDj71	0.05
+#define _3nY3us3bFSSlkeN8lchS92	2000U
+#define _u0Jv1KzpVzaiATs9m_XkA0	0xFFF80000U
+#define _wfq4wRs1hA4ox78Dr89S4_	30.0
+#define _Z77Ee2RGrs6HvPP38e_Kk_	0.0
+#define _i__a2Y_VTA2QJVHiStPPV_	0x007FFFFF
+#define _hIrqezDQ2P81pyClduDuH2	0x7F800000U
+#define _s_WvixMJrKe3kEjc_igDY2	0xFFFFFFFFU
+#define _4uNfhCjtiZICTr_I_2dNn_	0x00000000U
+#define _xPMRP5xoInnnSDqQdAB_p2	20U
+#define _Lx0QXbAfgItqmPZnmu_Pj0	0x7F800000
+#define _C69we9z7iNW9YfIyLPLPC_	0x7FF00000
+#define __khn2qNy4zfE3Rcj6lRsn0	32U
+#define _PIqWtbzrbQqv_KS_31HnE2	0
+#define _TPQ_vWWUSL7ze3htINC_W2	0U
+#define _TlYaTpHyOy3h9kx50A0_s2	1U
+#define _eRPEafvKyL4WAirvhKXYK_	0x7FF00000U
+#define _zlKlRt9I4NG2G2aasiN8o_	16U
+#define _CWvptZDNi2y10nMHh800M_	0x000FFFFF
+#define _PxkvxoLP11XHz_7ymjcx0_	0xFFF00000U
+#define _p1ZMcYujXmC1ks3HAHIPa0	8U
+#define _M3BP4AS2LfT3eQSyoMbkh0	0.0F
+#define _QHNSjd8JBrVVYZAcs7Zm32	1
+#define _g7WFphbd05O6bEjctOzUc1	4
+#define _KYlcoOk9rSSGYswizhYqZ2	5
+#endif

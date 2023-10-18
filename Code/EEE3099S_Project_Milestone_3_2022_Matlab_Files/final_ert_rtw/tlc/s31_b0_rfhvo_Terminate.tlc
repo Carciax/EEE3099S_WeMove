@@ -1,0 +1,140 @@
+%implements s31_b0_rfhvo_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* {S!d122}Terminate for MATLABSystem: '<S3>/Analog Input' */
+if (!cquffkfpixa.gwwponetui.matlabCodegenIsDeleted) {
+    cquffkfpixa.gwwponetui.matlabCodegenIsDeleted = true;
+    if ((cquffkfpixa.gwwponetui.isInitialized == 1) && cquffkfpixa.gwwponetui.isSetupComplete) {
+        cquffkfpixa.gwwponetui.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogIn_GetHandle(21U);
+        MW_AnalogIn_Close(cquffkfpixa.gwwponetui.AnalogInDriverObj.MW_ANALOGIN_HANDLE);
+    }
+}
+/* {E!d122}End of Terminate for MATLABSystem: '<S3>/Analog Input' */
+
+/* {S!d124}Terminate for MATLABSystem: '<S3>/Analog Input1' */
+if (!cquffkfpixa.achvv4bgxx.matlabCodegenIsDeleted) {
+    cquffkfpixa.achvv4bgxx.matlabCodegenIsDeleted = true;
+    if ((cquffkfpixa.achvv4bgxx.isInitialized == 1) && cquffkfpixa.achvv4bgxx.isSetupComplete) {
+        cquffkfpixa.achvv4bgxx.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogIn_GetHandle(20U);
+        MW_AnalogIn_Close(cquffkfpixa.achvv4bgxx.AnalogInDriverObj.MW_ANALOGIN_HANDLE);
+    }
+}
+/* {E!d124}End of Terminate for MATLABSystem: '<S3>/Analog Input1' */
+
+/* {S!d126}Terminate for MATLABSystem: '<S3>/Analog Input2' */
+if (!cquffkfpixa.pwvj5v5f5o.matlabCodegenIsDeleted) {
+    cquffkfpixa.pwvj5v5f5o.matlabCodegenIsDeleted = true;
+    if ((cquffkfpixa.pwvj5v5f5o.isInitialized == 1) && cquffkfpixa.pwvj5v5f5o.isSetupComplete) {
+        cquffkfpixa.pwvj5v5f5o.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogIn_GetHandle(17U);
+        MW_AnalogIn_Close(cquffkfpixa.pwvj5v5f5o.AnalogInDriverObj.MW_ANALOGIN_HANDLE);
+    }
+}
+/* {E!d126}End of Terminate for MATLABSystem: '<S3>/Analog Input2' */
+
+/* {S!d128}Terminate for MATLABSystem: '<S3>/Analog Input3' */
+if (!cquffkfpixa.axdbkmytzr.matlabCodegenIsDeleted) {
+    cquffkfpixa.axdbkmytzr.matlabCodegenIsDeleted = true;
+    if ((cquffkfpixa.axdbkmytzr.isInitialized == 1) && cquffkfpixa.axdbkmytzr.isSetupComplete) {
+        cquffkfpixa.axdbkmytzr.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogIn_GetHandle(16U);
+        MW_AnalogIn_Close(cquffkfpixa.axdbkmytzr.AnalogInDriverObj.MW_ANALOGIN_HANDLE);
+    }
+}
+/* {E!d128}End of Terminate for MATLABSystem: '<S3>/Analog Input3' */
+
+/* {S!d130}Terminate for MATLABSystem: '<Root>/Digital Output1' */
+if (!cquffkfpixa.iwfuskdwuz.matlabCodegenIsDeleted) {
+    cquffkfpixa.iwfuskdwuz.matlabCodegenIsDeleted = true;
+}
+/* {E!d130}End of Terminate for MATLABSystem: '<Root>/Digital Output1' */
+
+/* {S!d132}Terminate for MATLABSystem: '<Root>/Digital Output2' */
+if (!cquffkfpixa.mdmzkkdxqm.matlabCodegenIsDeleted) {
+    cquffkfpixa.mdmzkkdxqm.matlabCodegenIsDeleted = true;
+}
+/* {E!d132}End of Terminate for MATLABSystem: '<Root>/Digital Output2' */
+
+/* {S!d134}Terminate for MATLABSystem: '<Root>/Digital Output3' */
+if (!cquffkfpixa.daox43lqzl.matlabCodegenIsDeleted) {
+    cquffkfpixa.daox43lqzl.matlabCodegenIsDeleted = true;
+}
+/* {E!d134}End of Terminate for MATLABSystem: '<Root>/Digital Output3' */
+
+/* {S!d136}Terminate for MATLABSystem: '<Root>/Digital Output4' */
+if (!cquffkfpixa.pgpbu1y1dy.matlabCodegenIsDeleted) {
+    cquffkfpixa.pgpbu1y1dy.matlabCodegenIsDeleted = true;
+}
+/* {E!d136}End of Terminate for MATLABSystem: '<Root>/Digital Output4' */
+
+/* {S!d138}Terminate for MATLABSystem: '<S1>/ENA' */
+if (!cquffkfpixa.mgwntjm0gv.matlabCodegenIsDeleted) {
+    cquffkfpixa.mgwntjm0gv.matlabCodegenIsDeleted = true;
+    if ((cquffkfpixa.mgwntjm0gv.isInitialized == 1) && cquffkfpixa.mgwntjm0gv.isSetupComplete) {
+        cquffkfpixa.mgwntjm0gv.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(2U);
+        MW_PWM_SetDutyCycle(cquffkfpixa.mgwntjm0gv.PWMDriverObj.MW_PWM_HANDLE, 0.0);
+        cquffkfpixa.mgwntjm0gv.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(2U);
+        MW_PWM_Close(cquffkfpixa.mgwntjm0gv.PWMDriverObj.MW_PWM_HANDLE);
+    }
+}
+/* {E!d138}End of Terminate for MATLABSystem: '<S1>/ENA' */
+
+/* {S!d140}Terminate for MATLABSystem: '<S1>/IN1' */
+if (!cquffkfpixa.g54vdmiuvo.matlabCodegenIsDeleted) {
+    cquffkfpixa.g54vdmiuvo.matlabCodegenIsDeleted = true;
+}
+/* {E!d140}End of Terminate for MATLABSystem: '<S1>/IN1' */
+
+/* {S!d142}Terminate for MATLABSystem: '<S1>/IN2' */
+if (!cquffkfpixa.lpxmqhm1ds.matlabCodegenIsDeleted) {
+    cquffkfpixa.lpxmqhm1ds.matlabCodegenIsDeleted = true;
+}
+/* {E!d142}End of Terminate for MATLABSystem: '<S1>/IN2' */
+
+/* {S!d144}Terminate for MATLABSystem: '<S1>/ENB' */
+if (!cquffkfpixa.ocug4my4qn.matlabCodegenIsDeleted) {
+    cquffkfpixa.ocug4my4qn.matlabCodegenIsDeleted = true;
+    if ((cquffkfpixa.ocug4my4qn.isInitialized == 1) && cquffkfpixa.ocug4my4qn.isSetupComplete) {
+        cquffkfpixa.ocug4my4qn.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(3U);
+        MW_PWM_SetDutyCycle(cquffkfpixa.ocug4my4qn.PWMDriverObj.MW_PWM_HANDLE, 0.0);
+        cquffkfpixa.ocug4my4qn.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(3U);
+        MW_PWM_Close(cquffkfpixa.ocug4my4qn.PWMDriverObj.MW_PWM_HANDLE);
+    }
+}
+/* {E!d144}End of Terminate for MATLABSystem: '<S1>/ENB' */
+
+/* {S!d146}Terminate for MATLABSystem: '<S1>/IN3' */
+if (!cquffkfpixa.ltd1boammo.matlabCodegenIsDeleted) {
+    cquffkfpixa.ltd1boammo.matlabCodegenIsDeleted = true;
+}
+/* {E!d146}End of Terminate for MATLABSystem: '<S1>/IN3' */
+
+/* {S!d148}Terminate for MATLABSystem: '<S1>/IN4' */
+if (!cquffkfpixa.mfkvrqhpz2.matlabCodegenIsDeleted) {
+    cquffkfpixa.mfkvrqhpz2.matlabCodegenIsDeleted = true;
+}
+/* {E!d148}End of Terminate for MATLABSystem: '<S1>/IN4' */
+
+/* {S!d150}Terminate for MATLABSystem: '<S5>/Digital Input1' */
+if (!cquffkfpixa.kpbernuafa.matlabCodegenIsDeleted) {
+    cquffkfpixa.kpbernuafa.matlabCodegenIsDeleted = true;
+}
+/* {E!d150}End of Terminate for MATLABSystem: '<S5>/Digital Input1' */
+
+/* {S!d152}Terminate for MATLABSystem: '<S5>/Digital Input2' */
+if (!cquffkfpixa.fave25vlau.matlabCodegenIsDeleted) {
+    cquffkfpixa.fave25vlau.matlabCodegenIsDeleted = true;
+}
+/* {E!d152}End of Terminate for MATLABSystem: '<S5>/Digital Input2' */
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 7, fcnProtoType)>
+%endfunction

@@ -1,0 +1,100 @@
+%implements s18_b0_ozjvo_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* {S!d92}Terminate for MATLABSystem: '<Root>/Digital Output1' */
+if (!bfab0hvwlup.mgzakmvfjw.matlabCodegenIsDeleted) {
+    bfab0hvwlup.mgzakmvfjw.matlabCodegenIsDeleted = true;
+}
+/* {E!d92}End of Terminate for MATLABSystem: '<Root>/Digital Output1' */
+
+/* {S!d94}Terminate for MATLABSystem: '<Root>/Digital Output2' */
+if (!bfab0hvwlup.dl21emiswi.matlabCodegenIsDeleted) {
+    bfab0hvwlup.dl21emiswi.matlabCodegenIsDeleted = true;
+}
+/* {E!d94}End of Terminate for MATLABSystem: '<Root>/Digital Output2' */
+
+/* {S!d96}Terminate for MATLABSystem: '<Root>/Digital Output3' */
+if (!bfab0hvwlup.l1jc0yhiuk.matlabCodegenIsDeleted) {
+    bfab0hvwlup.l1jc0yhiuk.matlabCodegenIsDeleted = true;
+}
+/* {E!d96}End of Terminate for MATLABSystem: '<Root>/Digital Output3' */
+
+/* {S!d98}Terminate for MATLABSystem: '<Root>/Digital Output4' */
+if (!bfab0hvwlup.av5zx5cc0g.matlabCodegenIsDeleted) {
+    bfab0hvwlup.av5zx5cc0g.matlabCodegenIsDeleted = true;
+}
+/* {E!d98}End of Terminate for MATLABSystem: '<Root>/Digital Output4' */
+
+/* {S!d100}Terminate for MATLABSystem: '<S1>/ENA' */
+if (!bfab0hvwlup.md04idf0za.matlabCodegenIsDeleted) {
+    bfab0hvwlup.md04idf0za.matlabCodegenIsDeleted = true;
+    if ((bfab0hvwlup.md04idf0za.isInitialized == 1) && bfab0hvwlup.md04idf0za.isSetupComplete) {
+        bfab0hvwlup.md04idf0za.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(2U);
+        MW_PWM_SetDutyCycle(bfab0hvwlup.md04idf0za.PWMDriverObj.MW_PWM_HANDLE, 0.0);
+        bfab0hvwlup.md04idf0za.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(2U);
+        MW_PWM_Close(bfab0hvwlup.md04idf0za.PWMDriverObj.MW_PWM_HANDLE);
+    }
+}
+/* {E!d100}End of Terminate for MATLABSystem: '<S1>/ENA' */
+
+/* {S!d102}Terminate for MATLABSystem: '<S1>/IN1' */
+if (!bfab0hvwlup.gq4egcdpxz.matlabCodegenIsDeleted) {
+    bfab0hvwlup.gq4egcdpxz.matlabCodegenIsDeleted = true;
+}
+/* {E!d102}End of Terminate for MATLABSystem: '<S1>/IN1' */
+
+/* {S!d104}Terminate for MATLABSystem: '<S1>/IN2' */
+if (!bfab0hvwlup.jlhdrjsusf.matlabCodegenIsDeleted) {
+    bfab0hvwlup.jlhdrjsusf.matlabCodegenIsDeleted = true;
+}
+/* {E!d104}End of Terminate for MATLABSystem: '<S1>/IN2' */
+
+/* {S!d106}Terminate for MATLABSystem: '<S1>/ENB' */
+if (!bfab0hvwlup.pqm2v2x4zi.matlabCodegenIsDeleted) {
+    bfab0hvwlup.pqm2v2x4zi.matlabCodegenIsDeleted = true;
+    if ((bfab0hvwlup.pqm2v2x4zi.isInitialized == 1) && bfab0hvwlup.pqm2v2x4zi.isSetupComplete) {
+        bfab0hvwlup.pqm2v2x4zi.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(3U);
+        MW_PWM_SetDutyCycle(bfab0hvwlup.pqm2v2x4zi.PWMDriverObj.MW_PWM_HANDLE, 0.0);
+        bfab0hvwlup.pqm2v2x4zi.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(3U);
+        MW_PWM_Close(bfab0hvwlup.pqm2v2x4zi.PWMDriverObj.MW_PWM_HANDLE);
+    }
+}
+/* {E!d106}End of Terminate for MATLABSystem: '<S1>/ENB' */
+
+/* {S!d108}Terminate for MATLABSystem: '<S1>/IN3' */
+if (!bfab0hvwlup.amynkawwiw.matlabCodegenIsDeleted) {
+    bfab0hvwlup.amynkawwiw.matlabCodegenIsDeleted = true;
+}
+/* {E!d108}End of Terminate for MATLABSystem: '<S1>/IN3' */
+
+/* {S!d110}Terminate for MATLABSystem: '<S1>/IN4' */
+if (!bfab0hvwlup.myhz4zq3jd.matlabCodegenIsDeleted) {
+    bfab0hvwlup.myhz4zq3jd.matlabCodegenIsDeleted = true;
+}
+/* {E!d110}End of Terminate for MATLABSystem: '<S1>/IN4' */
+
+/* {S!d112}Terminate for MATLABSystem: '<S2>/Digital Input1' */
+if (!bfab0hvwlup.okc1f15xab.matlabCodegenIsDeleted) {
+    bfab0hvwlup.okc1f15xab.matlabCodegenIsDeleted = true;
+}
+/* {E!d112}End of Terminate for MATLABSystem: '<S2>/Digital Input1' */
+
+/* {S!d114}Terminate for MATLABSystem: '<S2>/Digital Input2' */
+if (!bfab0hvwlup.cindyvps3z.matlabCodegenIsDeleted) {
+    bfab0hvwlup.cindyvps3z.matlabCodegenIsDeleted = true;
+}
+/* {E!d114}End of Terminate for MATLABSystem: '<S2>/Digital Input2' */
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

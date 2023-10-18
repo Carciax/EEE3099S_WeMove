@@ -1,0 +1,167 @@
+%implements s18_b0_ozjvo_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+real_T cd4zbjkbia_idx_1;
+real_T lq1i10f0yt;
+real_T u0;
+int32_T jndxdswgdq_idx_2;
+uint32_T u;
+boolean_T c_value;
+boolean_T c_value_p;
+%closefile localVarDecl
+if (%<(SLibCGIRIsSampleHit(1, 18))>) {
+    /* {S!d34}Sum: '<Root>/Plus' incorporates:
+ *  DiscreteIntegrator: '<S2>/Accumulator'
+ *  DiscreteIntegrator: '<S2>/Accumulator1'
+ */
+    lq1i10f0yt = bfab0hvwlup.n2tw1ro1ck + bfab0hvwlup.lmiiphfv0w;
+    /* {S!d36}S-Function (scominttobit): '<Root>/Integer to Bit Converter' */
+    /* Integer to Bit Conversion */
+    u = (uint32_T)lq1i10f0yt >> 1U;
+    jndxdswgdq_idx_2 = (int32_T)(u & 1U);
+    u >>= 1U;
+    /* {S!d38}MATLABSystem: '<Root>/Digital Output1' incorporates:
+ *  S-Function (scominttobit): '<Root>/Integer to Bit Converter'
+ */
+    writeDigitalPin(13, (uint8_T)((uint32_T)lq1i10f0yt & 1U));
+    /* {S!d40}MATLABSystem: '<Root>/Digital Output2' incorporates:
+ *  S-Function (scominttobit): '<Root>/Integer to Bit Converter'
+ */
+    writeDigitalPin(8, (uint8_T)(u >> 1U & 1U));
+    /* {S!d42}MATLABSystem: '<Root>/Digital Output3' */
+    writeDigitalPin(12, (uint8_T)jndxdswgdq_idx_2);
+    /* {S!d44}MATLABSystem: '<Root>/Digital Output4' incorporates:
+ *  S-Function (scominttobit): '<Root>/Integer to Bit Converter'
+ */
+    writeDigitalPin(11, (uint8_T)(u & 1U));
+    /* {S!d46}Gain: '<S3>/vtow' */
+    u0 = 1.0 / oeushsvwci.Towlwr_wheelR;
+    /* {S!d52}Switch: '<Root>/StopWhenOver1m' */
+    if (lq1i10f0yt >= oeushsvwci.StopWhenOver1m_Threshold) {
+        /* {S!d48}SignalConversion generated from: '<S3>/change parameters' incorporates:
+ *  Constant: '<Root>/Constant'
+ */
+        cd4zbjkbia_idx_1 = oeushsvwci.Constant_Value_pjpwe1mnxq;
+    } else {
+        /* {S!d50}SignalConversion generated from: '<S3>/change parameters' incorporates:
+ *  Constant: '<Root>/Constant1'
+ */
+        cd4zbjkbia_idx_1 = oeushsvwci.Constant1_Value_n4aqhn1fhp;
+    }
+    /* {E!d52}End of Switch: '<Root>/StopWhenOver1m' */
+
+    /* {S!d54}Gain: '<S3>/vtow' incorporates:
+ *  Gain: '<S3>/change parameters'
+ *  SignalConversion generated from: '<S3>/change parameters'
+ */
+    lq1i10f0yt = (oeushsvwci.changeparameters_Gain[0] * cd4zbjkbia_idx_1 + oeushsvwci.changeparameters_Gain[2] * %<(SLibCG_SE(SLibCG_Grnd(0, 0, 1, "", -1, "", 0)))>) * u0;
+    cd4zbjkbia_idx_1 = (oeushsvwci.changeparameters_Gain[1] * cd4zbjkbia_idx_1 + oeushsvwci.changeparameters_Gain[3] * %<(SLibCG_SE(SLibCG_Grnd(0, 0, 1, "", -1, "", 0)))>) * u0;
+    /* {S!d56}MATLABSystem: '<S1>/ENA' */
+    bfab0hvwlup.md04idf0za.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(2U);
+    /* {S!d58}Abs: '<S1>/Abs' */
+    u0 = fabs(lq1i10f0yt);
+    /* {S!d60}MATLABSystem: '<S1>/ENA' */
+    if (!(u0 <= 255.0)) {
+        u0 = 255.0;
+    }
+    MW_PWM_SetDutyCycle(bfab0hvwlup.md04idf0za.PWMDriverObj.MW_PWM_HANDLE, u0);
+    /* {S!d62}MATLABSystem: '<S1>/IN1' incorporates:
+ *  Constant: '<S4>/Constant'
+ *  RelationalOperator: '<S4>/Compare'
+ */
+    writeDigitalPin(1, (uint8_T)(lq1i10f0yt >= oeushsvwci.Constant_Value_jrsecyupoy));
+    /* {S!d64}MATLABSystem: '<S1>/IN2' incorporates:
+ *  Constant: '<S5>/Constant'
+ *  RelationalOperator: '<S5>/Compare'
+ */
+    writeDigitalPin(0, (uint8_T)(lq1i10f0yt <= oeushsvwci.Constant_Value_oesthsfo00));
+    /* {S!d66}MATLABSystem: '<S1>/ENB' */
+    bfab0hvwlup.pqm2v2x4zi.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(3U);
+    /* {S!d68}Abs: '<S1>/Abs1' */
+    u0 = fabs(cd4zbjkbia_idx_1);
+    /* {S!d70}MATLABSystem: '<S1>/ENB' */
+    if (!(u0 <= 255.0)) {
+        u0 = 255.0;
+    }
+    MW_PWM_SetDutyCycle(bfab0hvwlup.pqm2v2x4zi.PWMDriverObj.MW_PWM_HANDLE, u0);
+    /* {S!d72}MATLABSystem: '<S1>/IN3' incorporates:
+ *  Constant: '<S7>/Constant'
+ *  RelationalOperator: '<S7>/Compare'
+ */
+    writeDigitalPin(5, (uint8_T)(cd4zbjkbia_idx_1 <= oeushsvwci.Constant_Value_brnm45phqs));
+    /* {S!d74}MATLABSystem: '<S1>/IN4' incorporates:
+ *  Constant: '<S6>/Constant'
+ *  RelationalOperator: '<S6>/Compare'
+ */
+    writeDigitalPin(4, (uint8_T)(cd4zbjkbia_idx_1 >= oeushsvwci.Constant_Value_cvfvqawtgf));
+    /* {S!d76}MATLABSystem: '<S2>/Digital Input1' */
+    if (bfab0hvwlup.okc1f15xab.SampleTime != oeushsvwci.DigitalInput1_SampleTime) {
+        bfab0hvwlup.okc1f15xab.SampleTime = oeushsvwci.DigitalInput1_SampleTime;
+    }
+    c_value = readDigitalPin(9);
+    /* {S!d78}MATLABSystem: '<S2>/Digital Input2' */
+    if (bfab0hvwlup.cindyvps3z.SampleTime != oeushsvwci.DigitalInput2_SampleTime) {
+        bfab0hvwlup.cindyvps3z.SampleTime = oeushsvwci.DigitalInput2_SampleTime;
+    }
+    c_value_p = readDigitalPin(10);
+    /* {S!d80}Switch: '<S2>/Switch' incorporates:
+ *  Constant: '<S2>/Constant'
+ *  Constant: '<S2>/Constant1'
+ */
+    if (lq1i10f0yt >= oeushsvwci.Switch_Threshold) {
+        u0 = oeushsvwci.Constant1_Value;
+    } else {
+        u0 = oeushsvwci.Constant_Value;
+    }
+    /* {S!d82}Update for DiscreteIntegrator: '<S2>/Accumulator' incorporates:
+ *  MATLABSystem: '<S2>/Digital Input1'
+ *  Product: '<S2>/Product'
+ *  RelationalOperator: '<S8>/FixPt Relational Operator'
+ *  Switch: '<S2>/Switch'
+ *  UnitDelay: '<S8>/Delay Input1'
+ */
+    bfab0hvwlup.n2tw1ro1ck += (real_T)((int32_T)c_value > (int32_T)bfab0hvwlup.bf53cjrkoy) * u0 * oeushsvwci.Accumulator_gainval;
+    /* {S!d84}Switch: '<S2>/Switch1' incorporates:
+ *  Constant: '<S2>/Constant2'
+ *  Constant: '<S2>/Constant6'
+ */
+    if (cd4zbjkbia_idx_1 >= oeushsvwci.Switch1_Threshold) {
+        u0 = oeushsvwci.Constant6_Value;
+    } else {
+        u0 = oeushsvwci.Constant2_Value;
+    }
+    /* {S!d86}Update for DiscreteIntegrator: '<S2>/Accumulator1' incorporates:
+ *  MATLABSystem: '<S2>/Digital Input2'
+ *  Product: '<S2>/Product1'
+ *  RelationalOperator: '<S9>/FixPt Relational Operator'
+ *  Switch: '<S2>/Switch1'
+ *  UnitDelay: '<S9>/Delay Input1'
+ */
+    bfab0hvwlup.lmiiphfv0w += (real_T)((int32_T)c_value_p > (int32_T)bfab0hvwlup.dfp5vc4gtz) * u0 * oeushsvwci.Accumulator1_gainval;
+    /* {S!d88}Update for UnitDelay: '<S8>/Delay Input1' incorporates:
+ *  MATLABSystem: '<S2>/Digital Input1'
+ */
+    bfab0hvwlup.bf53cjrkoy = c_value;
+    /* {S!d90}Update for UnitDelay: '<S9>/Delay Input1' incorporates:
+ *  MATLABSystem: '<S2>/Digital Input2'
+ */
+    bfab0hvwlup.dfp5vc4gtz = c_value_p;
+}
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction
