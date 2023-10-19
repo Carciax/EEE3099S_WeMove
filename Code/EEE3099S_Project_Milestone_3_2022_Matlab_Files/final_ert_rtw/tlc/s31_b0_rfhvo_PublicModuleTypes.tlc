@@ -1,0 +1,111 @@
+%implements s31_b0_rfhvo_PublicModuleTypes "C"
+
+%function PublicModuleTypes(block) Output
+
+#ifndef struct_tag_9aqKbsbsI7JI0RwgnVwU0C
+#define struct_tag_9aqKbsbsI7JI0RwgnVwU0C
+struct tag_9aqKbsbsI7JI0RwgnVwU0C
+{
+    int32_T __dummy;
+};
+#endif /* struct_tag_9aqKbsbsI7JI0RwgnVwU0C */
+#ifndef typedef_jsreacyhlt
+#define typedef_jsreacyhlt
+typedef struct tag_9aqKbsbsI7JI0RwgnVwU0C jsreacyhlt;
+#endif /* typedef_jsreacyhlt */
+#ifndef struct_tag_qrLkTWTW64zZK0sqwALTyG
+#define struct_tag_qrLkTWTW64zZK0sqwALTyG
+struct tag_qrLkTWTW64zZK0sqwALTyG
+{
+    boolean_T matlabCodegenIsDeleted;
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    jsreacyhlt DigitalIODriverObj;
+};
+#endif /* struct_tag_qrLkTWTW64zZK0sqwALTyG */
+#ifndef typedef_d3j1xkppvv
+#define typedef_d3j1xkppvv
+typedef struct tag_qrLkTWTW64zZK0sqwALTyG d3j1xkppvv;
+#endif /* typedef_d3j1xkppvv */
+
+/* Custom Type definition for MATLABSystem: '<S3>/Analog Input3' */
+#include "MW_SVD.h"
+
+#ifndef struct_tag_g1WX34VPn8QzVKQriB4HN
+#define struct_tag_g1WX34VPn8QzVKQriB4HN
+struct tag_g1WX34VPn8QzVKQriB4HN
+{
+    MW_Handle_Type MW_PWM_HANDLE;
+};
+#endif /* struct_tag_g1WX34VPn8QzVKQriB4HN */
+#ifndef typedef_dgxkcccbza
+#define typedef_dgxkcccbza
+typedef struct tag_g1WX34VPn8QzVKQriB4HN dgxkcccbza;
+#endif /* typedef_dgxkcccbza */
+#ifndef struct_tag_4eDVzK5FiryyCjvjjvrZGB
+#define struct_tag_4eDVzK5FiryyCjvjjvrZGB
+struct tag_4eDVzK5FiryyCjvjjvrZGB
+{
+    boolean_T matlabCodegenIsDeleted;
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    dgxkcccbza PWMDriverObj;
+};
+#endif /* struct_tag_4eDVzK5FiryyCjvjjvrZGB */
+#ifndef typedef_jcgfwaahsx
+#define typedef_jcgfwaahsx
+typedef struct tag_4eDVzK5FiryyCjvjjvrZGB jcgfwaahsx;
+#endif /* typedef_jcgfwaahsx */
+#ifndef struct_tag_UTG5XI0vJCsmjbgura8BP
+#define struct_tag_UTG5XI0vJCsmjbgura8BP
+struct tag_UTG5XI0vJCsmjbgura8BP
+{
+    MW_Handle_Type MW_ANALOGIN_HANDLE;
+};
+#endif /* struct_tag_UTG5XI0vJCsmjbgura8BP */
+#ifndef typedef_lh1iiparus
+#define typedef_lh1iiparus
+typedef struct tag_UTG5XI0vJCsmjbgura8BP lh1iiparus;
+#endif /* typedef_lh1iiparus */
+#ifndef struct_tag_8ohiN1FAOgR98njPNu14NC
+#define struct_tag_8ohiN1FAOgR98njPNu14NC
+struct tag_8ohiN1FAOgR98njPNu14NC
+{
+    boolean_T matlabCodegenIsDeleted;
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    lh1iiparus AnalogInDriverObj;
+    real_T SampleTime;
+};
+#endif /* struct_tag_8ohiN1FAOgR98njPNu14NC */
+#ifndef typedef_etu23ydspi
+#define typedef_etu23ydspi
+typedef struct tag_8ohiN1FAOgR98njPNu14NC etu23ydspi;
+#endif /* typedef_etu23ydspi */
+#ifndef struct_tag_9aqKbsbsI7JI0RwgnVwU0C
+#define struct_tag_9aqKbsbsI7JI0RwgnVwU0C
+struct tag_9aqKbsbsI7JI0RwgnVwU0C
+{
+    int32_T __dummy;
+};
+#endif /* struct_tag_9aqKbsbsI7JI0RwgnVwU0C */
+#ifndef typedef_akveebhwib
+#define typedef_akveebhwib
+typedef struct tag_9aqKbsbsI7JI0RwgnVwU0C akveebhwib;
+#endif /* typedef_akveebhwib */
+#ifndef struct_tag_mPMPiw8t0JZKYO8orfnwRG
+#define struct_tag_mPMPiw8t0JZKYO8orfnwRG
+struct tag_mPMPiw8t0JZKYO8orfnwRG
+{
+    boolean_T matlabCodegenIsDeleted;
+    int32_T isInitialized;
+    boolean_T isSetupComplete;
+    akveebhwib DigitalIODriverObj;
+    real_T SampleTime;
+};
+#endif /* struct_tag_mPMPiw8t0JZKYO8orfnwRG */
+#ifndef typedef_hyxyxmk155
+#define typedef_hyxyxmk155
+typedef struct tag_mPMPiw8t0JZKYO8orfnwRG hyxyxmk155;
+#endif /* typedef_hyxyxmk155 */
+%endfunction

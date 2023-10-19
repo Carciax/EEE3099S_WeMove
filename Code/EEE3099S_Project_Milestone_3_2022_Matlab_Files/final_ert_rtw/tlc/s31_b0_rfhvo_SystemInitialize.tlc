@@ -1,0 +1,55 @@
+%implements s31_b0_rfhvo_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* InitializeConditions for DiscreteIntegrator: '<S5>/Accumulator' */
+cquffkfpixa.e1xzdl3dhx = dhfztme0zw.Accumulator_IC;
+/* InitializeConditions for DiscreteIntegrator: '<S5>/Accumulator1' */
+cquffkfpixa.onm3fy2bog = dhfztme0zw.Accumulator1_IC;
+/* InitializeConditions for UnitDelay: '<S17>/Delay Input1' */
+cquffkfpixa.csdp5kspyw = dhfztme0zw.DetectIncrease_vinit;
+/* InitializeConditions for UnitDelay: '<S18>/Delay Input1' */
+cquffkfpixa.gfsjobi15k = dhfztme0zw.DetectIncrease1_vinit;
+/* SystemInitialize for Chart: '<Root>/ModeDefiner' */
+cquffkfpixa.a1yo0axpep = 0U;
+cquffkfpixa.g2dtldrvjh = 0;
+ancvnhcdfxp.pugqe3fhvd = 0.0;
+ancvnhcdfxp.hdbdedhash = 0.0;
+cquffkfpixa.hjjgiuizc3 = 0.0;
+cquffkfpixa.i3sovdpaob = false;
+cquffkfpixa.m4dhdveigb = 0.0;
+cquffkfpixa.lxnqcuqrpi = 0.0;
+cquffkfpixa.fn1opmgv0i = 0.0;
+cquffkfpixa.gao00lrcwa = 0.0;
+cquffkfpixa.g0lesxy2ax = false;
+cquffkfpixa.dwqphkvnld = 0.0;
+cquffkfpixa.ogpiiavbpe = 0.0;
+cquffkfpixa.cqffu0so1f = 0.0;
+cquffkfpixa.ffv25nxfoc = 0.0;
+memset(&cquffkfpixa.l2o4a3ld03[0], 0, 60U * sizeof(real_T));
+cquffkfpixa.ktiouwetz4 = 0.0;
+cquffkfpixa.bxhdeprqdo = 0.0;
+cquffkfpixa.jpimtswh4s = 0.0;
+cquffkfpixa.lutz3esajt = 0.0;
+ancvnhcdfxp.bi2osrvy5h = 0.0;
+ancvnhcdfxp.oiuzhzigzu = 0.0;
+/* SystemInitialize for Chart: '<S2>/Chart' */
+cquffkfpixa.bgmmma2ge1 = 0U;
+ancvnhcdfxp.erlsdlvxgb = 0.0;
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 5, fcnProtoType)>
+%endfunction

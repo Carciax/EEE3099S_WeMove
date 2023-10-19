@@ -1,0 +1,119 @@
+%implements s31_b0_rfhvo_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* Start for MATLABSystem: '<S3>/Analog Input' */
+cquffkfpixa.gwwponetui.matlabCodegenIsDeleted = false;
+cquffkfpixa.bv2fkwkuyf = true;
+cquffkfpixa.gwwponetui.SampleTime = dhfztme0zw.AnalogInput_SampleTime;
+cquffkfpixa.gwwponetui.isInitialized = 1;
+cquffkfpixa.gwwponetui.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogInSingle_Open(21U);
+cquffkfpixa.gwwponetui.isSetupComplete = true;
+/* Start for MATLABSystem: '<S3>/Analog Input1' */
+cquffkfpixa.achvv4bgxx.matlabCodegenIsDeleted = false;
+cquffkfpixa.ga41kjngtq = true;
+cquffkfpixa.achvv4bgxx.SampleTime = dhfztme0zw.AnalogInput1_SampleTime;
+cquffkfpixa.achvv4bgxx.isInitialized = 1;
+cquffkfpixa.achvv4bgxx.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogInSingle_Open(20U);
+cquffkfpixa.achvv4bgxx.isSetupComplete = true;
+/* Start for MATLABSystem: '<S3>/Analog Input2' */
+cquffkfpixa.pwvj5v5f5o.matlabCodegenIsDeleted = false;
+cquffkfpixa.ca1m4ovis0 = true;
+cquffkfpixa.pwvj5v5f5o.SampleTime = dhfztme0zw.AnalogInput2_SampleTime;
+cquffkfpixa.pwvj5v5f5o.isInitialized = 1;
+cquffkfpixa.pwvj5v5f5o.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogInSingle_Open(17U);
+cquffkfpixa.pwvj5v5f5o.isSetupComplete = true;
+/* Start for MATLABSystem: '<S3>/Analog Input3' */
+cquffkfpixa.axdbkmytzr.matlabCodegenIsDeleted = false;
+cquffkfpixa.nusygbj0kr = true;
+cquffkfpixa.axdbkmytzr.SampleTime = dhfztme0zw.AnalogInput3_SampleTime;
+cquffkfpixa.axdbkmytzr.isInitialized = 1;
+cquffkfpixa.axdbkmytzr.AnalogInDriverObj.MW_ANALOGIN_HANDLE = MW_AnalogInSingle_Open(16U);
+cquffkfpixa.axdbkmytzr.isSetupComplete = true;
+/* Start for MATLABSystem: '<Root>/Digital Output1' */
+cquffkfpixa.iwfuskdwuz.matlabCodegenIsDeleted = false;
+cquffkfpixa.p4iv1y0o0n = true;
+cquffkfpixa.iwfuskdwuz.isInitialized = 1;
+digitalIOSetup(13, 1);
+cquffkfpixa.iwfuskdwuz.isSetupComplete = true;
+/* Start for MATLABSystem: '<Root>/Digital Output2' */
+cquffkfpixa.mdmzkkdxqm.matlabCodegenIsDeleted = false;
+cquffkfpixa.bl5kbcqgnu = true;
+cquffkfpixa.mdmzkkdxqm.isInitialized = 1;
+digitalIOSetup(8, 1);
+cquffkfpixa.mdmzkkdxqm.isSetupComplete = true;
+/* Start for MATLABSystem: '<Root>/Digital Output3' */
+cquffkfpixa.daox43lqzl.matlabCodegenIsDeleted = false;
+cquffkfpixa.fyvbsrlqxc = true;
+cquffkfpixa.daox43lqzl.isInitialized = 1;
+digitalIOSetup(12, 1);
+cquffkfpixa.daox43lqzl.isSetupComplete = true;
+/* Start for MATLABSystem: '<Root>/Digital Output4' */
+cquffkfpixa.pgpbu1y1dy.matlabCodegenIsDeleted = false;
+cquffkfpixa.o0tzvx445r = true;
+cquffkfpixa.pgpbu1y1dy.isInitialized = 1;
+digitalIOSetup(11, 1);
+cquffkfpixa.pgpbu1y1dy.isSetupComplete = true;
+/* Start for MATLABSystem: '<S1>/ENA' */
+cquffkfpixa.mgwntjm0gv.matlabCodegenIsDeleted = false;
+cquffkfpixa.dktp1stppf = true;
+cquffkfpixa.mgwntjm0gv.isInitialized = 1;
+cquffkfpixa.mgwntjm0gv.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_Open(2U, 0.0, 0.0);
+cquffkfpixa.mgwntjm0gv.isSetupComplete = true;
+/* Start for MATLABSystem: '<S1>/IN1' */
+cquffkfpixa.g54vdmiuvo.matlabCodegenIsDeleted = false;
+cquffkfpixa.nzvjatox1q = true;
+cquffkfpixa.g54vdmiuvo.isInitialized = 1;
+digitalIOSetup(0, 1);
+cquffkfpixa.g54vdmiuvo.isSetupComplete = true;
+/* Start for MATLABSystem: '<S1>/IN2' */
+cquffkfpixa.lpxmqhm1ds.matlabCodegenIsDeleted = false;
+cquffkfpixa.djvbfuknfc = true;
+cquffkfpixa.lpxmqhm1ds.isInitialized = 1;
+digitalIOSetup(1, 1);
+cquffkfpixa.lpxmqhm1ds.isSetupComplete = true;
+/* Start for MATLABSystem: '<S1>/ENB' */
+cquffkfpixa.ocug4my4qn.matlabCodegenIsDeleted = false;
+cquffkfpixa.g3uejoru51 = true;
+cquffkfpixa.ocug4my4qn.isInitialized = 1;
+cquffkfpixa.ocug4my4qn.PWMDriverObj.MW_PWM_HANDLE = MW_PWM_Open(3U, 0.0, 0.0);
+cquffkfpixa.ocug4my4qn.isSetupComplete = true;
+/* Start for MATLABSystem: '<S1>/IN3' */
+cquffkfpixa.ltd1boammo.matlabCodegenIsDeleted = false;
+cquffkfpixa.dnt0uqvfyo = true;
+cquffkfpixa.ltd1boammo.isInitialized = 1;
+digitalIOSetup(5, 1);
+cquffkfpixa.ltd1boammo.isSetupComplete = true;
+/* Start for MATLABSystem: '<S1>/IN4' */
+cquffkfpixa.mfkvrqhpz2.matlabCodegenIsDeleted = false;
+cquffkfpixa.jqdazvs1q0 = true;
+cquffkfpixa.mfkvrqhpz2.isInitialized = 1;
+digitalIOSetup(4, 1);
+cquffkfpixa.mfkvrqhpz2.isSetupComplete = true;
+/* Start for MATLABSystem: '<S5>/Digital Input1' */
+cquffkfpixa.kpbernuafa.matlabCodegenIsDeleted = false;
+cquffkfpixa.drv0vtjunm = true;
+cquffkfpixa.kpbernuafa.SampleTime = dhfztme0zw.DigitalInput1_SampleTime;
+cquffkfpixa.kpbernuafa.isInitialized = 1;
+digitalIOSetup(9, 0);
+cquffkfpixa.kpbernuafa.isSetupComplete = true;
+/* Start for MATLABSystem: '<S5>/Digital Input2' */
+cquffkfpixa.fave25vlau.matlabCodegenIsDeleted = false;
+cquffkfpixa.jqotv0k0bl = true;
+cquffkfpixa.fave25vlau.SampleTime = dhfztme0zw.DigitalInput2_SampleTime;
+cquffkfpixa.fave25vlau.isInitialized = 1;
+digitalIOSetup(10, 0);
+cquffkfpixa.fave25vlau.isSetupComplete = true;
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%endfunction

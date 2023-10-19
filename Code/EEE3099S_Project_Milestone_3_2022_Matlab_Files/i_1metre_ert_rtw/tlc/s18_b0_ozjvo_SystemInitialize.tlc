@@ -1,0 +1,29 @@
+%implements s18_b0_ozjvo_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* InitializeConditions for DiscreteIntegrator: '<S2>/Accumulator' */
+bfab0hvwlup.n2tw1ro1ck = oeushsvwci.Accumulator_IC;
+/* InitializeConditions for DiscreteIntegrator: '<S2>/Accumulator1' */
+bfab0hvwlup.lmiiphfv0w = oeushsvwci.Accumulator1_IC;
+/* InitializeConditions for UnitDelay: '<S8>/Delay Input1' */
+bfab0hvwlup.bf53cjrkoy = oeushsvwci.DetectIncrease_vinit;
+/* InitializeConditions for UnitDelay: '<S9>/Delay Input1' */
+bfab0hvwlup.dfp5vc4gtz = oeushsvwci.DetectIncrease1_vinit;
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

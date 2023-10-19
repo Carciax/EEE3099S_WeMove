@@ -1,0 +1,19 @@
+%implements s18_b0_ozjvo_BlockInstanceSetup "C"
+
+%function BlockInstanceSetup(block, system) Output
+%% Subsystems with iterators in IR:
+%% TLC Block Registration buffer:
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_PWM.h")>
+%<LibAddToCommonIncludes("MW_PWM.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%<LibAddToCommonIncludes("MW_arduino_digitalio.h")>
+%% END  Block Registration buffer
+%endfunction

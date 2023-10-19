@@ -16,6 +16,26 @@
   )
 
 
+  (rectangle (start 208.28 146.05) (end 220.98 163.83)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid 6cb4105c-8c41-44a8-9e6a-dcd9049fb92e)
+  )
+  (rectangle (start 177.8 147.32) (end 190.5 162.56)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid 776d753c-d1b2-4d04-8ad4-19bed183a93d)
+  )
+
+  (text "Encoder" (at 209.55 149.86 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 37655d77-5314-44b7-b5d5-672059066f25)
+  )
+  (text "motor" (at 179.07 151.13 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 75dbc0f8-51db-4751-ae0f-88fe9177f01f)
+  )
+
   (hierarchical_label "GNDM" (shape input) (at 179.705 158.115 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3a17285e-e57d-4142-9676-4540eef28ba9)

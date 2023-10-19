@@ -16,6 +16,26 @@
   )
 
 
+  (rectangle (start 179.07 146.05) (end 191.77 161.29)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid 5cdb177a-de15-4a43-a8a4-38b7eee46e48)
+  )
+  (rectangle (start 209.55 144.78) (end 222.25 162.56)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid a36cc827-9746-4fce-86f9-67c111378ae0)
+  )
+
+  (text "Encoder" (at 210.82 148.59 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 733a1f63-6596-4d53-bfb3-13ab351de0a4)
+  )
+  (text "motor" (at 180.34 149.86 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid bf7d2c00-81cc-4c25-900d-739dd10cfd70)
+  )
+
   (hierarchical_label "5VM" (shape input) (at 180.34 152.4 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 33768848-dfd8-40b2-b905-a85dbe1ab9d7)
