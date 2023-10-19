@@ -1,0 +1,89 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   10 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "distT"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "distT"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "rotT"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "rotT"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "objects"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "objects"\
+      SrcLocation  ""\
+      Dimensions   [5,5]\
+    }\
+    ChartData {\
+      Name         "stop"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "stop"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "cObj"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "cObj"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "object"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "object"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "moves"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "moves"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_LeftTurn"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c3_LeftTurn"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
