@@ -1,0 +1,89 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   10 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "distT"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "distT"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "rotT"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "rotT"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "intersections"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "intersections"\
+      SrcLocation  ""\
+      Dimensions   [10,10]\
+    }\
+    ChartData {\
+      Name         "intersection"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "intersection"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "turn"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "turn"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_LinearCompetitiveModel"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c3_LinearCompetitiveModel"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Explore"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Explore"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Return"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Return"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
